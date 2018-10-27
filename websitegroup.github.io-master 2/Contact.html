@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <title>Women in STEM</title>
+  
+  <link rel="stylesheet" href="./css/womenincss.css">
+</head>
+
+<body id="contactus">
+     <p><a href="#main_nav" id="access_nav" class="access_aid"></a></p>
+  
+    <main>
+   <section id="content">
+    <h2>Contact Us</h2>
+    
+    <table id="contacttable">
+      <tr><td>Developers:</td><td>Sanchari Das</td></tr>
+      <tr><td></td><td>Lydia Wright</td></tr>
+      <tr><td></td><td>Charlotte Brooker</td></tr>
+      <tr><td>Email:</td><td>SDas3@sheffield.ac.uk</td></tr>
+      <tr><td></td><td>lcwright1@sheffield.ac.uk</td></tr>
+      <tr><td></td><td>cscbrooker1@sheffield.ac.uk</td></tr>
+      <tr><td>Telephone:</td><td>07548545013</td></tr>
+      <tr><td>Address:</td><td>The Diamond</td></tr>
+      <tr><td></td><td>Sheffield</td></tr>
+      <tr><td></td><td>S3 7RD</td></tr>
+    </table>
+   <br><br><br><br>
+   <h2>Feedback Form</h2>
+   <div class="feedform">
+     <form name="myform" action="http://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl" method="get">
+       <input type="hidden" name="recipient" value="rmehra1@sheffield.ac.uk">
+       <label for="MyName">Name:  </label>
+       <input id="MyName" type="text" name="MyName" maxlength="40" size="20" placeholder="Your name.." required>
+       <br>
+
+       <p>
+         <label for="MyEmail">E-Mail:</label>
+         <input type="email" name="MyEmail" id="MyEmail" placeholder="Your email.." maxlength="40" size="20" required>
+       </p>
+       <br>
+       <label for="Comments">Feedback:</label>
+       <textarea name="Comments" rows="5" cols="48" placeholder="Your comments.."></textarea>
+       <br>
+       <p>
+         <input type="submit">
+         <input type="reset">
+       </p>
+     </form>
+   </div>
+  </main>
+ <section>
+</body>
+<script>
+	var nav = document.getElementById('access_nav'),
+	    body = document.body;
+
+	nav.addEventListener('click', function(navigate) {
+		body.className = body.className? '' : 'with_nav';
+		navigate.preventDefault();
+	});
+</script>
+</html>
+
